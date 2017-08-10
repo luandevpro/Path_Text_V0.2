@@ -173,20 +173,6 @@ var getWidgetById = function(widgetId){
 var addOtherObjects = function(){
     /*This is image widget */
     var _widget = { width: 300, height: 300, top:50, left: 50 };
-   /* fabric.Image.fromURL("http://www.quorrischarmyn.com/wp-content/uploads/2013/01/nod32robot.png", function (image) {
-        console.log(image);
-        if (image.type != "error") {
-            canvas.add(image).setActiveObject(image);
-            canvas.renderAll();
-        }
-        else {
-            console.log(image.message);
-        }
-
-    }, _widget, 'anonymous'); */
-	
-	
-
     /*This is rectangle widget */
     var rect = new fabric.Rect({
         left: 200,
@@ -212,7 +198,6 @@ var addOtherObjects = function(){
         width: 20, height: 30, fill: 'blue', left: 50, top: 50
     });
 
-    //canvas.add(circle, triangle, rect).renderAll();
 
     /*This is textbox one*/
     var text = new fabric.Textbox('This is \n textbox 1',{
@@ -253,18 +238,6 @@ var addOtherObjects = function(){
         lineHeight: 1
     });
     canvas.add(text).renderAll();
-
-    /*This is overlay image*/
-    /*canvas.setOverlayImage('nod32robot.png', canvas.renderAll.bind(canvas), {
-        width: canvas.width,
-        height: canvas.height,
-        // Needed to position overlayImage at 0/0
-        originX: 'left',
-        originY: 'top',
-        left : 30,
-        top: 50
-    });*/
-
 }
 
 /* Update PathText Object Property When DOM updated */
