@@ -122,8 +122,7 @@ $(document).on('click', '#addAudio', function(e){
 });
 	
 $(document).ready(function(e) {
-    //logger.disableLogger();
-	//getting default values loaded
+   
     canvas = new fabric.Canvas('testCan');
 	canvas.on('object:selected', function(e){
         $('#propertiesPanel').show();
